@@ -1,0 +1,39 @@
+{
+  "name": "relay-decorators",
+  "version": "0.0.0",
+  "description": "Utility decorators for Relay components",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib",
+    "lint": "eslint src",
+    "prepublish": "npm run build",
+    "test": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4Catalyzer/relay-decorators.git"
+  },
+  "keywords": [
+    "relay",
+    "react",
+    "component",
+    "decorator"
+  ],
+  "author": "4Catalyzer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4Catalyzer/relay-decorators/issues"
+  },
+  "homepage": "https://github.com/4Catalyzer/relay-decorators#readme",
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.0.0",
+    "eslint-plugin-react": "^3.11.2",
+    "rimraf": "^2.4.4"
+  }
+}
