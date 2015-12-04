@@ -103,8 +103,8 @@ export default Relay.createContainer(WidgetSize, {
 });
 ```
 
-[npm-badge]: https://img.shields.io/npm/v/scroll-behavior.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/scroll-behavior
+[npm-badge]: https://img.shields.io/npm/v/relay-decorators.svg
+[npm]: https://www.npmjs.org/package/relay-decorators
 
 [discord-badge]: https://img.shields.io/badge/Discord-join%20chat%20%E2%86%92-738bd7.svg
 [discord]: https://discord.gg/0ZcbPKXt5bX40xsQ
