@@ -1,6 +1,6 @@
 {
   "name": "relay-decorators",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Utility decorators for Relay components",
   "files": [
     "lib"
