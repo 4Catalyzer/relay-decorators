@@ -28,6 +28,10 @@
     "url": "https://github.com/4Catalyzer/relay-decorators/issues"
   },
   "homepage": "https://github.com/4Catalyzer/relay-decorators#readme",
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-relay": ">=0.4.0"
+  },
   "devDependencies": {
     "babel": "^5.8.34",
     "babel-eslint": "^4.1.6",

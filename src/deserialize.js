@@ -1,8 +1,10 @@
 import React from 'react';
 
+import getComponentName from './utils/getComponentName';
+
 export default function deserialize(spec) {
   return Component => {
-    const componentName = Component.displayName || Component.name;
+    const componentName = getComponentName(Component);
 
     return class DeserializeContainer extends React.Component {
       static displayName = `deserialize(${componentName})`;
