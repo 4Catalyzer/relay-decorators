@@ -26,13 +26,19 @@ export default function poll(interval) {
       componentWillUnmount() {
         if (this._pollHandle !== null) {
           clearTimeout(this._pollHandle);
+          this._pollHandle = null;
         }
       }
 
       schedulePoll() {
         this._pollHandle = setTimeout(() => {
-          this.props.relay.forceFetch({}, ({ done, error, aborted }) => {
+          this.props.relay.forceFetch(null, ({ done, error, aborted }) => {
             if (done || error || aborted) {
+              // Stop polling if we're unmounted.
+              if (this._pollHandle === null) {
+                return;
+              }
+
               this.schedulePoll();
             }
           });
