@@ -28,6 +28,9 @@
     "url": "https://github.com/4Catalyzer/relay-decorators/issues"
   },
   "homepage": "https://github.com/4Catalyzer/relay-decorators#readme",
+  "dependencies": {
+    "babel-runtime": "5.x"
+  },
   "peerDependencies": {
     "react": ">=0.14.0",
     "react-relay": ">=0.4.0"
