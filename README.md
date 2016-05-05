@@ -20,8 +20,13 @@ deserializes raw data from Relay and injects the deserialized values into the
 decorated component as props.
 
 `react-decorators` ships with [`jsonDeserializer`](/src/jsonDeserializer.js),
-which deserializes JSON data from strings. It memoizes its return value, and
-preserves reference equality as long as the input string does not change.
+as an example deserializer. `jsonDeserializer` deserializes JSON data from
+strings. It memoizes its return value, and preserves reference equality as long
+as the input string does not change.
+
+**Note: For actual JSON fields, use
+[graphql-type-json](https://github.com/taion/graphql-type-json) instead of
+`jsonDeserializer`.**
 
 ```js
 import React from 'react';
