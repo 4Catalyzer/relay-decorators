@@ -1,3 +1,1 @@
-export deserialize from 'deserialize';
-export jsonDeserializer from 'jsonDeserializer';
-export poll from 'poll';
+export poll from './poll';
